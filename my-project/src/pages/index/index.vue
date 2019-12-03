@@ -1,22 +1,22 @@
 <template>
   <div class="main">
     <div class="login">
-      <div class="dneglu">登陆</div>
+      <div class="dneglu"><b>登陆</b></div>
       <div>
         <div class="username">
-          <label for="username" class="ulable">用户名:</label>
+          <label for="username" class="ulable"><b>用户名:</b></label>
 
-          <input type="text" class="input" id="username" />
+          <input type="text" class="input" id="username" placeholder="请输入用户名" />
         </div>
         <div class="username">
           <label for="password" class="ulable">密码:</label>
-          <input type="password" class="input" id="password" />
+          <input type="password" class="input" id="password" placeholder="请输入密码"/>
         </div>
       </div>
 
       <div class="button">
-        <button @click="navigate()">登陆</button>
-        <button>注册</button>
+        <button @click="navigate()"  style="height:50px;width:40%;color:#5c89ff"><b>登陆</b> </button>
+        <button  style="height:50px;width:40%;color:#5c89ff">注册</button>
       </div>
     </div>
   </div>
@@ -69,7 +69,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 28px;
+  font-weight: 400;
 }
 .login {
   width: 100%;
@@ -91,11 +92,17 @@ export default {
 .ulable {
   /* border: 1px solid black; */
   margin-right: 20px;
+  font-size: 18px;
+  font-weight: 400;
+
 }
 .input {
   width: 200px;
-  border: 1px solid rgba(255, 102, 62, 1);
+  height: 30px;
+  border: 1px solid #5C89FF;
+  border-radius: 5px;
   margin-right: 50px;
+  padding-left: 5px;
 }
 .button {
   height: 50px;

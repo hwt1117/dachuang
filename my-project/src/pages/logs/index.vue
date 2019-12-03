@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="title">已经为您展示 {{address}} 附近所有银行:</div>
+    <div class="title">已经为您展示 <div style="font-size:18px"> &#160;{{address}} &#160;</div> 附近所有银行:</div>
     <div class="login">
       <div class="dneglu" v-for="(item,index) in bank" :key="index">{{index+1}}.{{item.name}}({{item.juli}})</div>
     </div>
@@ -123,6 +123,8 @@ export default {
   justify-content: center;
 }
 .title {
+  display: flex;
+  align-items: center
 }
 .username {
   height: 50px;
