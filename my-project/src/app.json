@@ -2,7 +2,11 @@
   "pages": [
     "pages/index/main",
     "pages/logs/main",
+    "pages/verbOnline/main",
+    "pages/remind/main",
+    "pages/pingjia/main",
     "pages/counter/main"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,6 +30,24 @@
       "pagePath": "pages/logs/main",
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
+    },
+    {
+      "text": "xxx",
+      "pagePath": "pages/verbOnline/main",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    },
+    {
+      "text": "yyy",
+      "pagePath": "pages/remind/main",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    },
+    {
+      "text": "ttt",
+      "pagePath": "pages/pingjia/main",
+      "iconPath": "static/tabs/orders.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
     }],
 
     "items": [{
@@ -36,6 +58,24 @@
     }, {
       "name": "订单",
       "pagePath": "pages/logs/main",
+      "icon": "static/tabs/orders.png",
+      "activeIcon": "static/tabs/orders-active.png"
+    },
+    {
+      "name": "xxx",
+      "pagePath": "pages/verbOnline/main",
+      "icon": "static/tabs/orders.png",
+      "activeIcon": "static/tabs/orders-active.png"
+    },
+    {
+      "name": "yyy",
+      "pagePath": "pages/remind/main",
+      "icon": "static/tabs/orders.png",
+      "activeIcon": "static/tabs/orders-active.png"
+    },
+    {
+      "name": "ttt",
+      "pagePath": "pages/pingjia/main",
       "icon": "static/tabs/orders.png",
       "activeIcon": "static/tabs/orders-active.png"
     }],
