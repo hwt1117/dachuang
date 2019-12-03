@@ -1,9 +1,7 @@
 <template>
   <div class="main">
     <div class="login">
-      <div>
-        <p>登陆</p>
-      </div>
+      <div class="dneglu">登陆</div>
       <div>
         <div class="username">
           <label for="username" class="ulable">用户名:</label>
@@ -36,6 +34,11 @@ export default {
     card
   },
 
+  mounted() {
+    // let app = getApp()
+    let _this = this;
+    _this.getLocation;
+  },
   methods: {
     //  获取用户地址
     getLocation() {
@@ -69,10 +72,6 @@ export default {
     }
   },
 
-  created() {
-    // let app = getApp()
-    this.getLocation();
-  }
 };
 </script>
 
@@ -90,6 +89,15 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.dneglu {
+  /* border: 1px solid black; */
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 .login {
   width: 100%;
