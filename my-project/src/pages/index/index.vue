@@ -15,7 +15,7 @@
       </div>
 
       <div class="button">
-        <button>登陆</button>
+        <button @click="navigate()">登陆</button>
         <button>注册</button>
       </div>
     </div>
@@ -36,42 +36,14 @@ export default {
 
   mounted() {
     // let app = getApp()
-    let _this = this;
-    _this.getLocation;
   },
   methods: {
-    //  获取用户地址
-    getLocation() {
-      let _this = this;
-      wx.getLocation({
-        type: "wgs84",
-        success(res) {
-          console.log(res, "地址");
-          const lat = res.latitude;
-          const lon = res.longitude;
-          _this.getLocal(lat, lon);
-        }
-      });
+    navigate() {
+      let url = "../log/main";
+      wx.navigateTo({ url });
     },
-    getLocal(lat, lon) {
-      let qqmapsdk = new QQMapWX({
-        key: "LVVBZ-B456F-ZLNJF-NRVMB-76M2K-H3BXS"
-      });
-      qqmapsdk.reverseGeocoder({
-        location: {
-          latitude: lat,
-          longitude: lon
-        },
-        success: function(res) {
-          console.log(res, "success");
-        },
-        fail: function(res) {
-          console.log(res, "fail");
-        }
-      });
-    }
-  },
-
+    
+  }
 };
 </script>
 
